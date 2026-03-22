@@ -99,7 +99,7 @@ def _run_and_compare(name: str, locale=amazon_invoice.Locale_en_US) -> None:
 @pytest.mark.parametrize('name', [
     # multi-shipment order, third-party sellers, shipping & handling $0,
     # single Visa payment, no posttax adjustments
-    '113-2087606-5082648',
+    '658-7171324-9300534',
 
     # TODO: add more order IDs here as you sanitize additional invoices, e.g.:
     #   '<order-id>',   # single-item order
