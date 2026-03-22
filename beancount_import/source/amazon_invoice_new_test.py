@@ -100,6 +100,8 @@ def _run_and_compare(name: str, locale=amazon_invoice.Locale_en_US) -> None:
     # multi-shipment order, third-party sellers, shipping & handling $0,
     # single Visa payment, no posttax adjustments
     '658-7171324-9300534',
+    '200-5551393-4974620',
+    '358-5356143-4051025',
 
     # TODO: add more order IDs here as you sanitize additional invoices, e.g.:
     #   '<order-id>',   # single-item order
