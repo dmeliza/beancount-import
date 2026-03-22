@@ -1,0 +1,86 @@
+{
+    "order_id": "113-2087606-5082648",
+    "order_date": "2025-04-06",
+    "shipments": [
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "Kinetic Sand, 11lb (5kg) Natural Brown Play Sand, Mega Box for Arts and Crafts, Sandbox (Packaging May Vary), Moldable Sensory Toys for Ages 3 and up",
+                    "sold_by": "Amazon.com",
+                    "condition": null,
+                    "price": {
+                        "number": "32.31",
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "quantity": "1",
+                    "description": "120 Count Cat Litter Box Liners for Automatic Cat Litter Box and Litter-Robot 4/3, Heavy-Duty, Extra Thick, Economy Bulk Pack",
+                    "sold_by": "ANWA Direct",
+                    "condition": null,
+                    "price": {
+                        "number": "25.50",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        },
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "SKALA Mais Cachos Hair Type 3ABC - Eliminate Anti Frizz, For Curly Hair -2 in 1 Conditioning Treatment Cream and Cream To Comb 100% VEGAN 35.2 Oz (1 Pack)",
+                    "sold_by": "Casainko",
+                    "condition": null,
+                    "price": {
+                        "number": "20.94",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        }
+    ],
+    "credit_card_transactions": [
+        {
+            "date": "2025-04-06",
+            "card_description": "Visa",
+            "card_ending_in": "1234",
+            "amount": {
+                "number": "82.92",
+                "currency": "USD"
+            }
+        }
+    ],
+    "pretax_adjustments": [
+        {
+            "description": "Shipping & Handling",
+            "amount": {
+                "number": "0.00",
+                "currency": "USD"
+            }
+        }
+    ],
+    "tax": {
+        "number": "4.17",
+        "currency": "USD"
+    },
+    "posttax_adjustments": [],
+    "errors": []
+}

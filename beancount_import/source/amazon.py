@@ -277,6 +277,9 @@ from beancount.core.number import ZERO, ONE
 import beancount.core.amount
 
 from .amazon_invoice import LOCALES, parse_invoice, DigitalItem, Order
+from .amazon_invoice_new import is_new_format, parse_new_format_invoice
+
+import bs4
 
 from ..matching import FIXME_ACCOUNT, SimpleInventory
 from ..posting_date import POSTING_DATE_KEY, POSTING_TRANSACTION_DATE_KEY
@@ -484,6 +487,32 @@ def get_order_ids_seen(journal: JournalEditor,
         order_ids.setdefault(order_id, []).append(entry)
     return order_ids
 
+def _parse_invoice_any_format(path: str, locale) -> Optional[Order]:
+    """Detect whether *path* is an old-format (table-based) or new-format
+    (div-based) Amazon invoice and dispatch to the appropriate parser.
+
+    The new format (introduced ~2025) is identified by two independent signals
+    checked inside ``is_new_format``:
+
+    * The ``<title>`` element reads exactly ``"Order Details"`` rather than
+      embedding the order ID.
+    * There are no ``<table>`` elements at all.
+
+    Either signal alone is sufficient to trigger the new parser.  Otherwise the
+    original ``parse_invoice`` is used unchanged, preserving full backward
+    compatibility with all existing test fixtures and locale variants.
+    """
+    with open(path, 'rb') as f:
+        soup = bs4.BeautifulSoup(f.read(), 'lxml')
+
+    if is_new_format(soup):
+        logger.debug('amazon: detected new div-based format for %s', path)
+        return parse_new_format_invoice(path, locale=locale)
+
+    logger.debug('amazon: detected old table-based format for %s', path)
+    return parse_invoice(path, locale=locale)
+
+
 class AmazonPickler():
     def __init__( self, pickle_dir: Optional[str] ):
         self.pickle_dir = pickle_dir
@@ -580,7 +609,7 @@ class AmazonSource(Source):
         invoice = self.pickler.load(results, invoice_path) # type: Optional[Order]
         if invoice is None:
             self.log_status('amazon: processing %s: %s' % (order_id, invoice_path, ))
-            invoice = parse_invoice(invoice_path, locale=self.locale)
+            invoice = _parse_invoice_any_format(invoice_path, locale=self.locale)
             self.pickler.dump( results, invoice_path, invoice )
 
         self._cached_invoices[invoice_filename] = invoice, invoice_path
