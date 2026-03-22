@@ -1,0 +1,108 @@
+{
+    "order_id": "200-5551393-4974620",
+    "order_date": "2025-07-03",
+    "shipments": [
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "Toddy - THMPF20 Toddy Paper Filter Bags, Home Model Filters, Natural, Pack of 20",
+                    "sold_by": "Powered By Pizza Two",
+                    "condition": null,
+                    "price": {
+                        "number": "23.99",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        },
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "KXLife 2 Pack Small Curtain Rod 42-19 Inch, 1/2\u201d Diameter, Cafe Door Curtain Window Rod, Adjustable Drapery Rods with Brackets (Nickel)",
+                    "sold_by": "KXLife",
+                    "condition": null,
+                    "price": {
+                        "number": "16.99",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        },
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "MR.SIGA Ultra Fine Microfiber Cloths for Glass, Pack of 6, 35 x 40 cm 13.7\" x 15.7\"",
+                    "sold_by": "Mr SIGA USA",
+                    "condition": null,
+                    "price": {
+                        "number": "15.99",
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "quantity": "1",
+                    "description": "FolkArt Paint, Succulent 2 Fl Oz",
+                    "sold_by": "Amazon.com",
+                    "condition": null,
+                    "price": {
+                        "number": "3.08",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        }
+    ],
+    "credit_card_transactions": [
+        {
+            "date": "2025-07-03",
+            "card_description": "Visa",
+            "card_ending_in": "1234",
+            "amount": {
+                "number": "63.23",
+                "currency": "USD"
+            }
+        }
+    ],
+    "pretax_adjustments": [
+        {
+            "description": "Shipping & Handling",
+            "amount": {
+                "number": "0.00",
+                "currency": "USD"
+            }
+        }
+    ],
+    "tax": {
+        "number": "3.18",
+        "currency": "USD"
+    },
+    "posttax_adjustments": [],
+    "errors": []
+}

@@ -1,0 +1,54 @@
+{
+    "order_id": "358-5356143-4051025",
+    "order_date": "2025-04-16",
+    "shipments": [
+        {
+            "shipped_date": null,
+            "items": [
+                {
+                    "quantity": "1",
+                    "description": "Allegra K Women's Peter Pan Collar Shirt Lace Trim Floral Embroidered 1940s Peasant Blouse Small White",
+                    "sold_by": "uxcell",
+                    "condition": null,
+                    "price": {
+                        "number": "28.99",
+                        "currency": "USD"
+                    }
+                }
+            ],
+            "items_subtotal": null,
+            "pretax_adjustments": [],
+            "total_before_tax": null,
+            "posttax_adjustments": [],
+            "tax": [],
+            "total": null,
+            "errors": []
+        }
+    ],
+    "credit_card_transactions": [
+        {
+            "date": "2025-04-16",
+            "card_description": "Visa",
+            "card_ending_in": "1234",
+            "amount": {
+                "number": "30.53",
+                "currency": "USD"
+            }
+        }
+    ],
+    "pretax_adjustments": [
+        {
+            "description": "Shipping & Handling",
+            "amount": {
+                "number": "0.00",
+                "currency": "USD"
+            }
+        }
+    ],
+    "tax": {
+        "number": "1.54",
+        "currency": "USD"
+    },
+    "posttax_adjustments": [],
+    "errors": []
+}
